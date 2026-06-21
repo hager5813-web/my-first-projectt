@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechHub | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">TechHub</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <p class="section-label">Get in Touch</p>
+    <h1>Contact Us</h1>
+    <p>Have a question or need a consultation? We'd love to hear from you.</p>
+  </div>
+
+  <div class="page-wrapper">
+    <div class="contact-grid">
+
+      <!-- Left: Info Panel -->
+      <div class="contact-info">
+        <p class="section-label" style="color:rgba(245,245,240,0.5)">Our Details</p>
+        <h2>Let's Start a Conversation</h2>
+        <p>Fill out the form and we'll get back to you within 24 hours. Your message is saved securely.</p>
+
+        <div class="info-item">
+          <div class="info-icon">📧</div>
+          <div class="info-text">
+            <strong>Email</strong>
+            <span>hello@techhub.com</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div class="info-text">
+            <strong>Phone</strong>
+            <span>+1 (555) 123-4567</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div class="info-text">
+            <strong>Location</strong>
+            <span>123 Tech Street, San Francisco, CA</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">🕐</div>
+          <div class="info-text">
+            <strong>Business Hours</strong>
+            <span>Mon – Fri, 9am – 6pm PST</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="form-card">
+        <p class="section-label">Send a Message</p>
+        <h2 style="margin-bottom:24px">We're Here to Help</h2>
+
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name">
+            <span class="error-msg" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com">
+            <span class="error-msg" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="How can we help you?"></textarea>
+            <span class="error-msg" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+            Send Message ✉️
+          </button>
+        </form>
+
+        <div class="alert" id="contactAlert"></div>
+
+        <p style="margin-top:20px;font-size:0.82rem;color:#8a97a8;text-align:center">
+          🔒 Your information is stored locally and never shared with third parties.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 <span>TechHub Solutions</span>. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechHub | Orders & Inquiries</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">TechHub</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <p class="section-label">Admin Panel</p>
+    <h1>Orders & Inquiries</h1>
+    <p>All customer orders and contact form submissions — stored in your browser's local database.</p>
+  </div>
+
+  <div class="page-wrapper">
+
+    <!-- Orders Table -->
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <div>
+        <p class="section-label">Customer Orders</p>
+        <h2>Product Orders</h2>
+      </div>
+      <button class="btn btn-dark btn-sm" onclick="exportJSON('orders', 'orders.json')">
+        ⬇ Export as JSON
+      </button>
+    </div>
+
+    <div class="table-wrapper" style="margin-top:16px">
+      <div class="orders-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Qty</th>
+              <th>Customer</th>
+              <th>Email</th>
+              <th>Status</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody id="ordersTableBody">
+            <tr><td colspan="8" style="text-align:center;color:#8a97a8;padding:40px">Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Inquiries Table -->
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <div>
+        <p class="section-label">Contact Form</p>
+        <h2>Customer Inquiries</h2>
+      </div>
+      <button class="btn btn-dark btn-sm" onclick="exportJSON('inquiries', 'inquiries.json')">
+        ⬇ Export as JSON
+      </button>
+    </div>
+
+    <div class="table-wrapper" style="margin-top:16px">
+      <div class="orders-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Message</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody id="inquiriesTableBody">
+            <tr><td colspan="4" style="text-align:center;color:#8a97a8;padding:40px">Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 <span>TechHub Solutions</span>. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

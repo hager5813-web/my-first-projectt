@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Cloud Storage 1TB",
+        "price": "$10/mo",
+        "description": "Secure and scalable cloud storage for your personal and business files."
+    },
+    {
+        "id": 2,
+        "name": "AI Assistant Pro",
+        "price": "$25/mo",
+        "description": "Advanced AI-powered assistant to automate your daily tasks and workflows."
+    },
+    {
+        "id": 3,
+        "name": "Cyber Security Suite",
+        "price": "$150/yr",
+        "description": "Complete protection against malware, phishing, and advanced cyber threats."
+    },
+    {
+        "id": 4,
+        "name": "DevOps Toolkit",
+        "price": "$45/mo",
+        "description": "A comprehensive set of tools for continuous integration and deployment."
+    },
+    {
+        "id": 5,
+        "name": "Virtual Private Server",
+        "price": "$30/mo",
+        "description": "High-performance VPS with root access and 99.9% uptime guarantee."
+    }
+]

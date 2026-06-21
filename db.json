@@ -1,0 +1,38 @@
+{
+  "orders": [
+    {
+      "productId": "1",
+      "productName": "Cloud Storage 1TB",
+      "productPrice": "$10/mo",
+      "quantity": "1",
+      "customerName": "Taky Hany",
+      "customerEmail": "takyhany4@gmail.com",
+      "customerPhone": "0121 186 6465",
+      "status": "Pending",
+      "id": "nd5cjGoiam0"
+    },
+    {
+      "productId": "2",
+      "productName": "AI Assistant Pro",
+      "productPrice": "$25/mo",
+      "quantity": "1",
+      "customerName": "Taky Allah Hany",
+      "customerEmail": "takyhany4@gmail.com",
+      "customerPhone": "+201211866465",
+      "status": "Pending",
+      "id": "AUvJAFBi3mg"
+    },
+    {
+      "productId": "5",
+      "productName": "Virtual Private Server",
+      "productPrice": "$30/mo",
+      "quantity": "2",
+      "customerName": "Hagar tammam immam",
+      "customerEmail": "hagar@gmail.com",
+      "customerPhone": "0121 186 6465",
+      "status": "Pending",
+      "id": "bgAUcOS9upQ"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
