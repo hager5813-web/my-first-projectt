@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechHub | Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">TechHub</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <p class="section-label">Our Catalog</p>
+    <h1>Featured Products</h1>
+    <p>Premium hardware and digital services, hand-picked for professionals.</p>
+  </div>
+
+  <div class="page-wrapper">
+
+    <!-- Static Hardware Table -->
+    <p class="section-label">Hardware</p>
+    <h2>Physical Products</h2>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Pro Laptop</strong></td>
+            <td>$1,200</td>
+            <td>High-performance workstation for developers.</td>
+          </tr>
+          <tr>
+            <td><strong>Ultra Monitor</strong></td>
+            <td>$450</td>
+            <td>4K resolution with professional color accuracy.</td>
+          </tr>
+          <tr>
+            <td><strong>Mechanical Keyboard</strong></td>
+            <td>$150</td>
+            <td>Tactile switches for fast, precise typing.</td>
+          </tr>
+          <tr>
+            <td><strong>Wireless Mouse</strong></td>
+            <td>$80</td>
+            <td>Ergonomic design with long battery life.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Dynamic Products from JSON -->
+    <p class="section-label">Digital Services</p>
+    <h2>Exclusive API Products</h2>
+    <p style="color:#8a97a8">Loaded dynamically from our products database. Click <strong>Order Now</strong> on any item.</p>
+
+    <div id="dynamicProducts" class="cards-grid">
+      <p style="color:#8a97a8">Loading products...</p>
+    </div>
+
+  </div>
+
+  <!-- Order Modal -->
+  <div class="modal-overlay" id="orderModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Place Your Order</h3>
+        <button class="modal-close" id="modalClose">✕</button>
+      </div>
+
+      <!-- Hidden fields to track which product is being ordered -->
+      <input type="hidden" id="orderProductId">
+      <input type="hidden" id="orderProductName">
+      <input type="hidden" id="orderProductPrice">
+
+      <!-- Order summary -->
+      <div class="order-summary">
+        <p>You are ordering:</p>
+        <p class="order-product-name" id="summaryName">—</p>
+        <p class="order-price" id="summaryPrice">—</p>
+      </div>
+
+      <form id="orderForm">
+        <div class="form-group">
+          <label for="orderName">Full Name</label>
+          <input type="text" id="orderName" placeholder="Your full name">
+          <span class="error-msg" id="orderNameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="orderEmail">Email Address</label>
+          <input type="email" id="orderEmail" placeholder="your@email.com">
+          <span class="error-msg" id="orderEmailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="orderPhone">Phone Number</label>
+          <input type="tel" id="orderPhone" placeholder="+1 (555) 000-0000">
+          <span class="error-msg" id="orderPhoneError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="orderQty">Quantity</label>
+          <select id="orderQty">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+          Confirm Order 🛒
+        </button>
+      </form>
+
+      <div class="alert" id="orderAlert"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 <span>TechHub Solutions</span>. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
